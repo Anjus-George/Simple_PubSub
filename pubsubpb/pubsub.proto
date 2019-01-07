@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package pubsub;
+
+option go_package = "pubsubpb";
+
+/*message ResultMessage {
+  //ResultCode result_code = 1;
+  //ErrorCode error_code = 2;
+  string error_message = 3;
+}*/
+
+/*enum ResultCode {
+  FAILURE = 0;
+  SUCCESS = 1;
+  TRY_LATER = 2;
+}*/
+
+/*enum ErrorCode {
+  INTERNAL_ERROR = 0;
+  TOPIC_NOT_EXIST = 1;
+  INDEX_OUT_OF_BOUNDS = 2;
+  INVALID_TOPIC = 3;
+  TOPIC_IS_EMPTY = 4;
+  AUTHENTICATION_FAILURE = 5;
+  MESSAGE_SIZE_TOO_LARGE = 6;
+  ALL_MESSAGE_CONSUMED = 7;
+}*/
+
+message ProduceRequest {
+  string item = 1;
+  string topic = 2;
+}
+
+message ProduceResponse {
+  //ResultMessage result_message = 1;
+  int64 topic_length = 2;
+}
+
+message ConsumeRequest {
+  string topic = 1;
+  int64 start_index = 2;
+  int64 fetch_size = 3;
+}
+
+message ConsumeResponse {
+  //ResultMessage result_message = 1;
+  string response_message = 1;
+  repeated string item_list = 2;
+  int64 last_consumed_index = 3;
+}
+
+service PubSubService {
+
+  rpc Produce(ProduceRequest) returns (ProduceResponse) {};
+
+  rpc Consume(ConsumeRequest) returns (ConsumeResponse) {};
+}
