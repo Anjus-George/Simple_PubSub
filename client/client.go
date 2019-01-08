@@ -3,7 +3,7 @@ package client
 import (
 	"fmt"
 	"log"
-	"github.com/Anjus-George/pubsubpb"
+	"github.com/Anjus-George/simple_pubsub/pubsubpb"
 
 	"google.golang.org/grpc"
 )

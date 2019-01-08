@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"github.com/Anjus-George/pubsubpb"
+	"github.com/Anjus-George/simple_pubsub/pubsubpb"
 )
 
 //Producer - is a type of Client

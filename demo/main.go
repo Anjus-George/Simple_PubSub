@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/Anjus-George/client"
-	"github.com/Anjus-George/consumer"
-	"github.com/Anjus-George/producer"
+	"github.com/Anjus-George/simple_pubsub/client"
+	"github.com/Anjus-George/simple_pubsub/consumer"
+	"github.com/Anjus-George/simple_pubsub/producer"
 )
 
 func main() {
