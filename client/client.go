@@ -3,7 +3,7 @@ package client
 import (
 	"fmt"
 	"log"
-	"vsc_workspace/simple_pubsub/pubsubpb"
+	"github.com/Anjus-George/pubsubpb"
 
 	"google.golang.org/grpc"
 )

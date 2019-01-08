@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"vsc_workspace/simple_pubsub/client"
-	"vsc_workspace/simple_pubsub/consumer"
-	"vsc_workspace/simple_pubsub/producer"
+	"github.com/Anjus-George/client"
+	"github.com/Anjus-George/consumer"
+	"github.com/Anjus-George/producer"
 )
 
 func main() {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"vsc_workspace/simple_pubsub/pubsubpb"
+	"github.com/Anjus-George/pubsubpb"
 )
 
-//Producer - inherits from Client
+//Producer - is a type of Client
 type Producer struct {
 }
 

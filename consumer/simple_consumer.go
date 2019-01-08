@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"vsc_workspace/simple_pubsub/pubsubpb"
+	"github.com/Anjus-George/pubsubpb"
 )
 
-//Consumer - inherits from Client
+//Consumer - is a type of Client
 type Consumer struct {
 }
 

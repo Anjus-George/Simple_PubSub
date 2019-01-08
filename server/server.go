@@ -5,9 +5,8 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"vsc_workspace/simple_pubsub/pubsubpb"
+	"github.com/Anjus-George/pubsubpb"
 
-	//"github.com/simplesteph/grpc-go-course/greet/greetpb"
 	"google.golang.org/grpc"
 )
 
